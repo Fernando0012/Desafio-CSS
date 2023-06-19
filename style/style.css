@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&family=WindSong:wght@400;500&display=swap');
+/*
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'WindSong', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo{
+    width: 60px;
+    opacity: .7;
+}
+
+.background{
+    background-image: url(../img/principal.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 200px 300px;
+}
+
+.title h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/*-- Menu --*/
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 16px;
+
+    background: transparent;
+    
+   position: fixed;
+
+    font-family: 'WindSong', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#menu.scroll{
+    background: rgba(234,221,213,255);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 24px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+
+/*-- cards --*/
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 32px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 200px;
+    width: 200px;
+    padding: 12px;
+
+    gap: 6px;
+
+    border: 2px solid rgba(0, 0, 0, 0.041);
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.08);
+}
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(143, 132, 132, 0.782);
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    padding: 18px;
+}
+
+.card{
+    width: 24px;
+}
+
+/* -- Gallery -- */
+
+.ourGallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 24px;
+    padding: 32px;
+
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+}
+
+.text{
+    width: 400px;
+}
+
+.gallery{
+    display: grid;
+
+    gap: 12px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 0;
+
+    grid-template-areas:
+     "girl girl ft1 ft2"
+     "girl girl ft3 ft4"
+     "ft6 ft7 bottom bottom";
+}
+
+
+.girl{
+    width: 412px;
+    height: 409px;
+    grid-area: girl;
+}
+
+.ft1{
+    grid-area: ft1;
+    width: 200px;
+    height: 190px;
+}
+
+.ft2{
+    grid-area: ft2;
+    width: 200px;
+    height: 190px;
+}
+
+.ft3{
+    grid-area: ft3;
+    width: 200px;
+    height: 190px;
+}
+
+.ft4{
+    grid-area: ft4;
+    width: 200px;
+    height: 190px;
+}
+
+.ft6{
+    grid-area: ft6;
+    width: 200px;
+    height: 190px;
+}
+
+.ft7{
+    grid-area: ft7;
+    left: 20px;
+    width: 200px;
+    height: 190px;
+}
+
+.bottom{
+    grid-area: bottom;
+    width: 410px;
+    height: 190px;
+}
+
+/*-- Subscribe --*/
+
+.news{
+    background-image: url(../img/gly2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 90px 150px;
+
+    color: white;
+
+}
+
+.news h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+#email{
+    width: 540px;
+    padding: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-right: none;
+
+}
+#email::placeholder{
+    color: white;
+}
+
+.button{
+    padding: 12px 24px;
+    color: #000;
+    background-color: white;
+    box-shadow: 0 0 0 0;
+    border: none;
+}
+
+/*-- products --*/
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 32px;
+
+    gap: 18px;
+}
+
+.product{
+    width: 150px;
+}
+
+.listProducts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 32px;
+}
+
+.listProducts div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 6px;
+}
+
+.listProducts div p{
+    display: inline;
+    font-size: 12px;
+    color: rgb(94, 88, 88);
+}
+
+.listProducts div p.for{
+    margin-right: 4px;
+    color: rgb(223, 77, 77);
+}
+
+.sale{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    height: 35px;
+    width: 35px;
+    background-color: rgb(8, 105, 203);
+    border-radius: 50%;
+
+    color: white;
+    position: absolute;
+   
+    font-size: 15px;
+}
+  
+/*-- Contact --*/
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+
+    background: rgb(254, 244, 245);
+}
+
+.custome,
+.company,
+.social,
+.archive{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custome div,
+.company div,
+.social div,
+.archive div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    font-size: 12px;
+}
+
+/*-- footer --*/
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    
+    background: rgb(254, 244, 245);
+
+    border-top: 1px solid rgb(0, 0, 0, 0.08);
+}
+
+/*-- Back To Top --*/
+
+.back-to-up{
+    background: rgba(234,221,213,255);
+    color: white;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+
+    padding: 0.5rem;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-up.up{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
