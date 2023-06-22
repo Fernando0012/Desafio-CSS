@@ -16,6 +16,19 @@
     font-size: 16px;
 }
 
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    gap: 110.87rem;
+}
+
+main{
+    display: flex;
+    flex: 1;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -53,6 +66,7 @@
 /*-- Menu --*/
 
 #menu{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,7 +358,10 @@ nav ul{
     justify-content: space-evenly;
     padding: 6.25rem;
 
+    gap: 12px;
+
     background: rgb(254, 244, 245);
+    border-bottom: .0625rem solid rgb(0, 0, 0, 0.08);
 }
 
 .custome,
@@ -370,14 +387,17 @@ nav ul{
 /*-- footer --*/
 
 footer{
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
     background: rgb(254, 244, 245);
 
     border-top: .0625rem solid rgb(0, 0, 0, 0.08);
+
+
 }
 
 /*-- Back To Top --*/
@@ -409,10 +429,12 @@ footer{
     transform: translateY(0);
 }
 
+
 @media (max-width: 768px) {
     *{
         font-size: 12px;
     }
+
     
     .logo{
         width: 1.75rem;
